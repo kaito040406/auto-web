@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <header>
+    <h2>auto mode</h2>
+    </header>
+    <div class="per_input_box">
+      {% if user.is_authenticated %}
+      <p>{{ user.get_username }}でログイン中</p>
+      {% else %}
+      <p>ログインしていません</p>
+      {% endif %}
+    </div>
+  </body>
+</html>
